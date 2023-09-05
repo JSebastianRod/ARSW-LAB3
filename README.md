@@ -54,7 +54,13 @@ Sincronización y Dead-Locks.
 
 4. Una primera hipótesis para que se presente la condición de carrera para dicha función (pause and check), es que el programa consulta la lista cuyos valores va a imprimir, a la vez que otros hilos modifican sus valores. Para corregir esto, haga lo que sea necesario para que efectivamente, antes de imprimir los resultados actuales, se pausen todos los demás hilos. Adicionalmente, implemente la opción ‘resume’.
 
+	<br> Se implemento la funcionalidad de Pause and check utilizando el metodo .wait() y la funcionalidad resume, usando el el metodo notifyAll().
+	<br>![](./images/Parte2Punto4.png)<br>
+
 5. Verifique nuevamente el funcionamiento (haga clic muchas veces en el botón). Se cumple o no el invariante?.
+<br> Aun no se cumple la invariante.
+	<br>![](./images/Parte2Punto5.png)<br>
+
 
 6. Identifique posibles regiones críticas en lo que respecta a la pelea de los inmortales. Implemente una estrategia de bloqueo que evite las condiciones de carrera. Recuerde que si usted requiere usar dos o más ‘locks’ simultáneamente, puede usar bloques sincronizados anidados:
 
