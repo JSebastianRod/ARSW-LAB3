@@ -19,6 +19,8 @@ public class Immortal extends Thread {
 
     private boolean stop = false;
 
+    private boolean running = true;
+
 
     public Immortal(String name, List<Immortal> immortalsPopulation, int health, int defaultDamageValue, ImmortalUpdateReportCallback ucb) {
         super(name);
@@ -31,7 +33,7 @@ public class Immortal extends Thread {
 
     public void run() {
 
-        while (true) {
+        while (running) {
             Immortal im;
 
             if(!stop) {
@@ -100,8 +102,13 @@ public class Immortal extends Thread {
         health = v;
     }
 
+
     public int getHealth() {
         return health;
+    }
+
+    public void terminate() {
+        running = false;
     }
 
     public void setStop(boolean stop) {

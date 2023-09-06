@@ -1,0 +1,3 @@
+Intentamos realizar la eliminacion, pero sin hacer uso del synchronized es muy complicado, por lo cual no logramos realizarlo,
+al intertar eliminar los inmortales se generaban errores a la hora de las peleas, ya que otros inmortales estaban esperando
+el turno para pelear con ese mismo y al removerlo intentaban hacerle daño a algo que no se encuentra en el arreglo.

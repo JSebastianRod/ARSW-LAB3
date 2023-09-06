@@ -1,6 +1,7 @@
 
 ## Escuela Colombiana de Ingeniería
 ### Arquitecturas de Software – ARSW
+### Juan Pablo Daza Pinzon - Juan Sebastian Rodriguez Peña
 
 
 #### Ejercicio – programación concurrente, condiciones de carrera y sincronización de hilos. EJERCICIO INDIVIDUAL O EN PAREJAS.
@@ -83,6 +84,7 @@ Sincronización y Dead-Locks.
 	* Corrija el problema anterior __SIN hacer uso de sincronización__, pues volver secuencial el acceso a la lista compartida de inmortales haría extremadamente lenta la simulación.
 
 11. Para finalizar, implemente la opción STOP.
+<br>![](./images/Parte2Punto11.png)<br>
 
 <!--
 ### Criterios de evaluación
